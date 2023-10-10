@@ -5,6 +5,7 @@ import logout from "../../assets/logout.svg";
 import { SignedIn } from "@clerk/nextjs";
 import { SignOutButton } from "@clerk/nextjs";
 import { OrganizationSwitcher } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const Topbar = () => {
   return (
@@ -27,6 +28,7 @@ const Topbar = () => {
 
         <OrganizationSwitcher
           appearance={{
+            baseTheme: dark,
             elements: {
               organizationSwitcherTrigger: "py-2 px-4",
             },
